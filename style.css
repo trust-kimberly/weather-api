@@ -1,0 +1,107 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 20px 0;
+    color: darkslategray;
+}
+
+h2 {
+    font-size: 90px;
+    margin: 20px 0 40px;
+    color: darkslategray;
+}
+
+form {
+    justify-self: end;
+}
+
+input {
+    height: 30px;
+    width: 20vw;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-input {
+    border-bottom: 2px black solid;
+    background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
+ font-size: 20px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#submit-btn {
+    height: 40px;
+    background: lavender;
+    color: darkslategray;
+    transition: all 0.4s ease-in-out;
+}
+
+#submit-btn:hover {
+    cursor: grab;
+    background-color: #fff8a6;
+    color: black;
+}
+
+#display-city {
+    text-transform: capitalize;
+}
+
+#display-country {
+    text-transform: uppercase;
+}
+
+.hottest {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);    
+}
+
+.hot {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.warm {
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);    
+}
+
+.chilly {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);    
+}
+
+.cold {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);    
+}
+
+.coldest {
+    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%, rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+}
